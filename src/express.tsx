@@ -1,9 +1,9 @@
-import express, { Request, Response } from 'express';
+import express from 'express';
 import { Sequelize } from 'sequelize';
 
 // Initialize Express app
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(express.json());
@@ -12,10 +12,10 @@ app.use(express.json());
 const sequelize = new Sequelize('postgres://username:password@localhost:5432/digital_signing_tool');
 
 // Define models
-import { User, Document, Signature, Field } from './models';
+// import { User, Document, Signature, Field } from './models';
 
 // Define routes
-app.get('/', (req: Request, res: Response) => {
+app.get('/', (req, res) => {
   res.send('Digital Signing Tool API');
 });
 

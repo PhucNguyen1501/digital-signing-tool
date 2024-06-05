@@ -4,8 +4,10 @@
   "description": "This is a digital signing tool application built with TypeScript, Node.js, Express.js, Postgres, and React. The application allows users to upload PDF files and collect digital signatures.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node src/app.js"
   },
+  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -19,10 +21,11 @@
     "pg-hstore": "^2.3.4",
     "react": "^18.3.1",
     "sequelize": "^6.37.3",
-    "ts-node-dev": "^2.0.0",
-    "typescript": "^5.4.5"
+    "ts-node-dev": "^2.0.0"
   },
   "devDependencies": {
-    "@types/react": "^18.3.3"
+    "@types/react": "^18.3.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
   }
 }
